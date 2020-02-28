@@ -9,4 +9,13 @@ public class ContaPoupanca extends Conta {
     public void gerarTaxa() {
         saldo += saldo * .006;
     }
+
+    @Override
+    public String toString() {
+        return "ContaPoupanca{" +
+                "numeroConta=" + numeroConta +
+                ", titular='" + titular + '\'' +
+                ", saldo=" + saldo +
+                '}';
+    }
 }

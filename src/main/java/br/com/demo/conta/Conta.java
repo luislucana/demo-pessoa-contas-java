@@ -1,8 +1,8 @@
 package br.com.demo.conta;
 
 public abstract class Conta {
-    private int numeroConta;
-    private String titular;
+    protected int numeroConta;
+    protected String titular;
     //representa o saldo atual dessa conta
     protected double saldo;
 
@@ -22,7 +22,7 @@ public abstract class Conta {
         }
     }
 
-    //deposita o valor na conta e retorna true se operação bem sucedido
+    // deposita o valor na conta e retorna true se operação bem sucedido
     public boolean depositar(double valor) {
         this.saldo += valor;
         return true;
@@ -46,5 +46,14 @@ public abstract class Conta {
     }
 
     public void gerarTaxa() {
+    }
+
+    @Override
+    public String toString() {
+        return "Conta{" +
+                "numeroConta=" + numeroConta +
+                ", titular='" + titular + '\'' +
+                ", saldo=" + saldo +
+                '}';
     }
 }

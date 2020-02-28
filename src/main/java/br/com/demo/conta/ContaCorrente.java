@@ -18,4 +18,13 @@ public class ContaCorrente extends Conta {
             return sacar(valor);
         }
     }
+
+    @Override
+    public String toString() {
+        return "ContaCorrente{" +
+                "numeroConta=" + numeroConta +
+                ", titular='" + titular + '\'' +
+                ", saldo=" + saldo +
+                '}';
+    }
 }

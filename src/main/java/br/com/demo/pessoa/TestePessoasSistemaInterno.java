@@ -14,4 +14,8 @@ public class TestePessoasSistemaInterno {
         // referência "a" está apontando exatamente! Flexibilidade.
     }
 
+    public static void main(String[] args) {
+        Gerente gerente1 = new Gerente();
+        gerente1.facaAlgo();
+    }
 }

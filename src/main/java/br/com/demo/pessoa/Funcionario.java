@@ -6,6 +6,10 @@ public abstract class Funcionario {
     protected String cpf;
     protected double salario;
 
+    public void facaAlgo() {
+        System.out.println("(Funcionario) fazendo algo...");
+    }
+
     public String getNome() {
         return nome;
     }
