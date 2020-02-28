@@ -4,7 +4,17 @@ public class Gerente extends Funcionario implements Autenticavel {
 
     private String senha;
 
-    // outros atributos e métodos
+    public String getSenha() {
+        return senha;
+    }
+
+    public void setSenha(String senha) {
+        this.senha = senha;
+    }
+
+    public double getBonificacao() {
+        return this.salario * 1.4 + 1000;
+    }
 
     public boolean autenticar(String senha) {
         if(this.senha != senha) {
@@ -14,9 +24,5 @@ public class Gerente extends Funcionario implements Autenticavel {
         // departamento do gerente tem acesso ao Sistema
 
         return true;
-    }
-
-    public double getBonificacao() {
-        return this.salario * 1.4 + 1000;
     }
 }

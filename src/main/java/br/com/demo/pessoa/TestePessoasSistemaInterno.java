@@ -1,8 +1,8 @@
-package br.com.demo;
+package br.com.demo.pessoa;
 
 import br.com.demo.pessoa.Autenticavel;
 
-public class SistemaInterno {
+public class TestePessoasSistemaInterno {
 
     public void login(Autenticavel a) {
         String senha = "123456"; // pega senha de um lugar, ou de um scanner de polegar
